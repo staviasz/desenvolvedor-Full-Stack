@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erick Staviasz - Full Stack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital@1&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-2" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 pb-2 fs-1 fw-bold text-colored-2"><a href="#" class="text-colored-2">Erick Staviasz</a></h1>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse colapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-lg-flex">
+                    <li class="nav-item fw-bold active">
+                        <a href="#sobre-mim" class="nav-link text-colored-2">Sobre mim</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#front-end" class="nav-link text-colored-2">Front-end</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#back-end" class="nav-link text-colored-2">Back-end</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#contato" class="nav-link text-colored-2">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
+        <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="images/slide/full stack.png" class="w-100" alt="banner do site">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="images/slide/front-end.png" class="w-100" alt="banner do site">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="images/slide/back-end.png" class="w-100" alt="banner do site">
+                </div>
+            </div>
+            <button type="button" class="btn carousel-control-next" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <button type="button" class="btn carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+        <section id="sobre-mim">
+            <div class="container">
+                <article class="mb-5 ms-lg-5">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img src="images/WhatsApp Image 2023-01-27 at 1.18.55 PM.jpeg" class="w-100 mt-5" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <h2 class="mt-md-4 mt-lg-5 mb-3 text-colored-1">Sobre mim</h2>
+                            <p class="paragrafo-sobre-mim">
+                                Estudante de Analise e desenvolvimento de sistemas (UNIFACS), desenvolvedor Python (Ultima school) e
+                                Engenheiro de Front-end (EBAC)
+                            </p>
+                            <p class="paragrafo-sobre-mim"> 
+                                Habil no gerenciamento de banco de dados relacionais, MySQL e Sqlite3, VCS com Git e GitHub.
+                            </p>
+                            <p class="paragrafo-sobre-mim">
+                                Muito criativo &#128526;,de perfil analítico, reconhecido por liderança, comunicação, trabalho em equipe e colaboração,
+                            </p>
+                        </div>
+                    </div>
+                </article>
+        </section>
+        <section id="front-end" class="back-color">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center mb-5 text-colored-1 pt-4">Front end</h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#definicao-front" class="btn fw-bold text-colored-2 active">O que é front-end</button>
+                            <button type="button" data-bs-toggle="tab" class="btn fw-bold text-colored-2" data-bs-target="#html">HTML</button>
+                            <button type="button" data-bs-toggle="tab" class="btn fw-bold text-colored-2" data-bs-target="#css">CSS</button>
+                            <button type="button" data-bs-toggle="tab" class="btn fw-bold text-colored-2" data-bs-target="#javascript">JavaScript</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="definicao-front">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <article class="mb-5 ms-lg-5">
+                                            <p>Podemos classificar como a parte visual de um site, aquilo que conseguimos interagir. 
+                                                Quem trabalha com Front End é responsável por desenvolver por meio do código uma interface
+                                                gráfica e, normalmente, com as tecnologias base da Web: <strong>HTML</strong>, <strong>CSS</strong> e
+                                                <strong>JavaScript</strong>
+                                                
+                                            </p>
+                                            <p>Algumas pessoas podem confundir um pouco esse trabalho com o que um designer faz, 
+                                                pois no passado existia uma entidade chamada Webmaster que fazia tudo isso e mais um pouco, 
+                                                mas a diferença aqui é que o designer vai utilizar alguma ferramenta visual para desenhar a interface, 
+                                                do Photoshop ao Sketch e, quem faz Front-End, estará mais próxima do código em si, 
+                                                que irá rodar num navegador Web como o Chrome, Firefox ou Safari.
+                                            </p>
+                                            <p>
+                                                Esse profissional cria uma interface que torna os dados do código em informações visuais na 
+                                                estrutura de um site, permitindo que os usuários encontrem o que buscam de forma mais intuitiva
+                                                e possam interagir com o ambiente virtual criado.
+                                            </p>
+                                            <p>
+                                                É comum que os programadores front-end trabalhem em conjunto com os designers para que tudo
+                                                fique visualmente agradável, combine com a proposta solicitada pelo cliente e seja funcional.
+                                            </p>
+                                            <p>
+                                                Como todos os sites ou aplicativos necessitam dessa parte visual, os front-end são um dos grandes
+                                                profissionais do comércio eletrônico.
+                                                Entre as funções de um programador desse stack – ou seja, dessa área de conhecimento tecnológico – 
+                                                estão o desenvolvimento da interface, o desempenho e o tempo de resposta da aplicação para que a 
+                                                experiência do usuário não seja negativa.
+                                            </p>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="html">
+                                <article id="html" class="mb-5 ms-lg-5">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <img class="w-100 mb-sm-4 rounded" src="images/conteudo/front/html.webp" alt="Codigo HTML">
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <p>
+                                                Permite inserir o conteúdo e estabelecer a estrutura básica de um website. 
+                                                Portanto, ele serve para dar significado e organizar as informações de uma página na web. 
+                                                Os hipertextos são conjuntos de elementos conectados. Esses podem ser palavras, imagens, vídeos, documento, etc.
+                                            </p>
+                                            <p>
+                                                No inicio da web, era comum encontrar sites apenas contendo textos e imagens simples, com estrutura básica e sem estilizações.
+                                                Porém, nos dias atuais, muito dificilmente você encontrará sites que possuam apenas elementos HTML. Portanto, 
+                                                podemos considerar o HTML o “esqueleto” da sua página.
+                                            </p>
+                                            <p>
+                                                Através de um documento HTML, ou seja, um documento com a extensão .html, 
+                                                o navegador faz a leitura do arquivo e renderiza o seu conteúdo para que o usuário final possa visualizá-lo. 
+                                                Geralmente um site é composto por diversas páginas HTML, como por exemplo: 
+                                                um website que contenha três páginas (uma homepage, uma página de contato e uma página de produtos) 
+                                                receberá ao menos três documentos .html distintos, sendo uma para cada página do website. 
+                                                Este documento consiste em uma série de tags. As tags são códigos que definem toda a estrutura da página, 
+                                                o documento HTML é compostos por uma estrutura de abertura e uma de fachamento, como &lt;tag&gt; e &lt;/tag&gt;. 
+                                                Há também tags de estrutura única, como a tag &lt;br/&gt; que realiza uma quebra de linha.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="tab-pane" id="css">
+                                <article id="css" class="mb-5 ms-lg-5">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <img class="w-100 mb-sm-4 rounded" src="images/conteudo/front/css.jpg" alt="">
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <p>
+                                                Chamado de  linguagem Cascading Style Sheet é usado para estilizar elementos escritos em uma linguagem de marcação como HTML. 
+                                                O CSS separa o conteúdo da representação visual do site. Pense na decoração da sua página, utilizando o CSS é possível alterar a cor do texto e do fundo, 
+                                                fonte e espaçamento entre parágrafos. Também pode criar tabelas, usar variações de layouts, ajustar imagens para suas respectivas telas e assim por diante. 
+                                                A relação entre HTML e CSS é bem forte. Como o HTML é uma linguagem de marcação (o alicerce de um site) e o CSS é focado no estilo 
+                                                (toda a estética de um site), eles andam juntos.
+                                            </p>
+                                            <p>
+                                                Um site que não carrega completamente ou tem um plano de fundo branco com texto azul e preto. 
+                                                Isso significa que a parte CSS do site não foi carregada corretamente ou não existe.
+                                            </p>
+                                            <p>
+                                                Antes de usar CSS, toda a estilização tinha que ser incluída na marcação HTML. 
+                                                Isso significa que você deveria descrever separadamente todo o plano de fundo, 
+                                                as cores das fontes, os alinhamentos, etc.
+                                            </p>
+                                            <p>
+                                                Mas o CSS permite que você estilize tudo em um arquivo diferente, criando assim o estilo separadamente. 
+                                                E, mais tarde, faça integração do arquivo CSS na parte superior da marcação HTML. 
+                                                Isso mantém a marcação HTML limpa e fácil de manter.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="tab-pane" id="javascript">
+                                <article id="js" class="mb-5 ms-lg-5">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <img class="w-100 mb-sm-4 rounded" src="images/conteudo/front/js.png" alt="">
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <p>
+                                                O JS ou JavaScript é uma linguagem de programação de alto-nível, criada no meio da década de 90, 
+                                                originalmente criado para funcionar no navegador Netscape Navigator, seu objetivo era facilitar processos dentro de páginas web, 
+                                                tornado a programação de animações e alertas muito mais simples, É uma linguagem de programação de comportamento que permite a 
+                                                criação de conteúdos dinâmicos, controle de mídias e animações para deixar seu site mais interativo e interessante.
+                                            </p>
+                                            <p>
+                                                Desse tempo para cá, o JavaScript vem sofrendo diversas funções e aplicações diferentes, ficando mais versátil e completo de acordo com o tempo. 
+                                                Hoje, por exemplo, já é possível usar Javascript para criar aplicativos Desktop e Mobile, não só aplicações baseadas em web e navegadores.
+                                            </p>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <h4 class="text-colored-1" id="javascript-vantagens">As vantagens do JavaScript</h4>
+                                                    <ul id="vantagens-script">
+                                                        <li>
+                                                            Você não precisa de um compilador porque os navegadores de internet o interpretam com HTML;
+                                                        </li>
+                                                        <li>
+                                                            É totalmente compatível com várias plataformas e navegadores;
+                                                        </li>
+                                                        <li>
+                                                            Você pode validar entradas e reduzir a necessidade de verificações manuais de dados;
+                                                        </li>
+                                                        <li>
+                                                            Ele faz com que os sites sejam bem mais interativos e segurem a atenção dos visitantes por mais tempo, 
+                                                            característica que define a experiência do usuário(UX).
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <h4 class="text-colored-1" id="javascript-desvantagens">As fraquezas do JavaScript</h4>
+                                                    <ul id="desvantagens-script">
+                                                        <li>
+                                                            Vulnerável a brechas de segurança;
+                                                        </li>
+                                                        <li>
+                                                            Pode ser usado para executar códigos maliciosos no computador do usuário;
+                                                        </li>
+                                                        <li>
+                                                            Nem sempre tem suporte a diferentes navegadores e dispositivos;
+                                                        </li>
+                                                        <li>
+                                                            Os trechos de código em JS costumam ser bem grandes;
+                                                        </li>
+                                                        <li>
+                                                            Pode ser renderizado diferentemente em vários dispositivos, o que pode ocasionar inconsistências.
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                        
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="back-end">
+            <div class="container">
+                <div class="row">
+                    <h2 class="mb-4 text-colored-1 text-center pt-4">Back end</h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#definicao-back" class="btn fw-bold text-colored-2 active">O que é back-end</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#python" class="btn fw-bold text-colored-2">Python</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#java" class="btn fw-bold text-colored-2">Java</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#php" class="btn fw-bold text-colored-2">PHP</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#banco-dados" class="btn fw-bold text-colored-2">Banco de dados</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="definicao-back">
+                                <article class="mb-5 ms-lg-5">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <p>
+                                                Desenvolvedores backend focam principalmente em como o website funciona. 
+                                                Eles escrevem códigos focados na funcionalidade e na lógica que faz o aplicativo web que eles trabalham funcionar, 
+                                                e a tecnologia que eles utilizam nunca é vista pelos usuários que acessam a aplicação web.
+                                            </p>
+                                            <p>
+                                                As tecnologias backend são uma combinação de servidores, aplicações e banco de dados.
+                                            </p>
+                                            <p>
+                                                As responsabilidades de um desenvolvedor backend podem envolver no desenvolvimento de APIs, 
+                                                escrever códigos para interagirem com o banco de dados, criar bibliotecas, trabalhar em processos dos negócios, 
+                                                estrutura de dados e muito mais. No que o desenvolvedor backend vai trabalhar dependem do cargo que ele vai preencher 
+                                                e a empresa.
+                                            </p>
+                                            <p>
+                                                Um desenvolvedor back-end pode ser quem planeja, constrói e implementa uma aplicação. Ele concentra os seus trabalhos 
+                                                na arquitetura dos sites e seus bancos de dados, fazendo que a comunicação com o servidor seja feita da forma certa.
+                                                Esse profissional pode trabalhar no desenvolvimento de aplicativos, softwares, sites e outros sistemas. Por meio de vários
+                                                códigos escritos por esse profissional, são realizadas diversas funções no programa.
+                                            </p>
+                                            <p>
+                                                Além disso, ele pode criar os bancos de dados e fazer as integrações necessárias para que esse esteja guardando novas 
+                                                informações, corrigir bugs, aplicar técnicas de segurança, analisar estatísticas e dados do site, atualizar funções da
+                                                aplicação e muitas outras coisas.Tudo isso faz dele um profissional essencial para diversos tipos de empresas e projetos. 
+                                                Então, se você pensa em iniciar no mundo da programação, se tornar um back-end pode ser uma boa opção de carreira!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="tab-pane" id="python">
+                                <article class="mb-4 ms-lg-5">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img class="w-100" src="https://www.springboard.com/blog/wp-content/uploads/2021/06/eli5-what-is-python-an-overview-guide-for-beginners.jpg" alt="">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>
+                                                Python é uma linguagem de programação de alto nível — ou High Level Language —, dinâmica, interpretada,
+                                                modular, multiplataforma e orientada a objetos — uma forma específica de organizar softwares onde, a 
+                                                grosso modo, os procedimentos estão submetidos às classes, o que possibilita maior controle e estabilidade 
+                                                de códigos para projetos de grandes proporções.
+                                            </p>
+                                            <p>
+                                                Por ser uma linguagem de sintaxe relativamente simples e de fácil compreensão, ganhou popularidade entre 
+                                                profissionais da indústria tecnológica que não são especificamente programadores, como engenheiros, matemáticos, 
+                                                cientistas de dados, pesquisadores e outros.
+                                            </p>
+                                            <p>
+                                                No desenvolvimento back-end também é chamado de server-side, o Python tambem se destaca principalmente em conjunto
+                                                com o Django, um dos muitos frameworks, que auxilia na construção das aplicações
+                                            </p>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <h4 class="text-colored-1" id="vantagens-python">Vantagens do Python</h4>
+                                                    <ul id="lista-vantagens-python">
+                                                        <li>
+                                                            É fácil de aprender
+                                                        </li>
+                                                        <li>
+                                                            É open source e gratuito
+                                                        </li>
+                                                        <li>
+                                                            Oferece múltiplas possibilidades de desenvolvimento
+                                                        </li>
+                                                        <li>
+                                                            É portátil e multiplataforma
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <h4 class="text-colored-1" id="empresas-python">Empresas que usam Python</h4>
+                                                    <ul id="lista-empresas-python">
+                                                        <li>
+                                                            Dropbox
+                                                        </li>
+                                                        <li>
+                                                            Spotify
+                                                        </li>
+                                                        <li>
+                                                            Airbnb
+                                                        </li>
+                                                        <li>
+                                                            Uber
+                                                        </li>
+                                                        <li>
+                                                            NASA
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>    
+                                    </div>    
+                                </article>
+                            </div>
+                            <div class="tab-pane" id="java">
+                                <article class="mb-4 ms-lg-5">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img class="w-100" src="https://thumbs.dreamstime.com/b/ilustra%C3%A7%C3%A3o-do-logotipo-java-em-fundo-branco-editorial-tela-branca-eps-download-banner-vetorial-jpeg-208329454.jpg" alt="">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>
+                                                Java é uma linguagem de programação e plataforma de computação liberada pela primeira vez pela Sun Microsystems em 1995.
+                                                De um início humilde, ela evoluiu para uma grande participação no mundo digital dos dias atuais, oferecendo a plataforma 
+                                                confiável na qual muitos serviços e aplicativos são desenvolvidos. Produtos e serviços novos e inovadores projetados para 
+                                                o futuro continuam a confiar no Java também.
+                                            </p>
+                                            <p>
+                                                Uma outra grande vantagem é que, assim como o PHP, o Java é uma linguagem multi-plataforma. Ou seja, pode rodar em diferentes 
+                                                sistemas operacionais como, por exemplo, o Windows e o Linux.
+                                                Além do mais, a linguagem Java possui muitas bibliotecas Open Source. Aliás, grandes nomes criaram muitas dessas, como o Apache
+                                                e o Google, o que acaba tornando o desenvolvimento em Java muito mais fácil, rápido e barato.
+                                            </p>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <h4 class="text-colored-1" id="vantagens-java">Vantagens do Java</h4>
+                                                    <ul id="lista-vantagens-java">
+                                                        <li>
+                                                            Criação de aplicativos 
+                                                        </li>
+                                                        <li>
+                                                            Criação de jogos
+                                                        </li>
+                                                        <li>
+                                                            Linguagem Multi-Threaded
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <h4 class="text-colored-1" id="empresas-java">Empresas que usam Java</h4>
+                                                    <ul id="lista-empresas-java">
+                                                        <li>
+                                                            Facebook
+                                                        </li>
+                                                        <li>
+                                                            Google
+                                                        </li>
+                                                        <li>
+                                                            LinkedIn
+                                                        </li>
+                                                        <li>
+                                                            YouTube
+                                                        </li>
+                                                        <li>
+                                                            Amazon
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="tab-pane" id="php">
+                                <article class="mb-4 ms-lg-5">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img class="w-100" src="https://upload.wikimedia.org/wikipedia/commons/3/31/Webysther_20160423_-_Elephpant.svg" alt="">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>
+                                                PHP é uma linguagem de programação voltada para o desenvolvimento de aplicações para 
+                                                a web e para criar sites, favorecendo a conexão entre os servidores e a interface do usuário.
+                                                Entre os fatores que fizeram o PHP se popularizar bastante é possível apontar, principalmente, 
+                                                o fato de ser em código aberto. Isso significa que qualquer um pode realizar mudanças na estrutura 
+                                                dessa linguagem.
+                                            </p>
+                                            <p>
+                                                Quando vemos algumas definições sobre o que é PHP, geralmente, ele é descrito como uma linguagem do 
+                                                lado do servidor. Na prática, isso significa que ele é aplicado na programação que acontece em um servidor 
+                                                da web responsável por rodar a aplicação ou, mais frequentemente, um site.
+                                            </p>
+                                            <p>
+                                                Esse trabalho prévio permite que os elementos de uma página sejam carregados antes de serem exibidos ao 
+                                                usuário que acessa um site, por exemplo. O código PHP é executado no servidor que, ao ler os comandos, 
+                                                consegue ativar todos os elementos funcionais e de interface visual do site.
+                                                Talvez, a principal aplicação da linguagem PHP, quando falamos de web, seja para estruturar sites em WordPress.
+                                            </p>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <h4 class="text-colored-1" id="vantagens-php">Vantagens do PHP</h4>
+                                                    <ul id="lista-vantagens-php">
+                                                        <li>
+                                                            Aprendizado fácil 
+                                                        </li>
+                                                        <li>
+                                                            Código aberto
+                                                        </li>
+                                                        <li>
+                                                            Suporta uma grande quantidade de dados
+                                                        </li>
+                                                        <li>
+                                                            Compatível com os principais bancos de dados
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <h4 class="text-colored-1" id="empresas-php">Sites em PHP</h4>
+                                                    <ul id="lista-empresas-php">
+                                                        <li>
+                                                            Facebook
+                                                        </li>
+                                                        <li>
+                                                            Tesla
+                                                        </li>
+                                                        <li>
+                                                            TypeForm
+                                                        </li>
+                                                        <li>
+                                                            Delivery Hero
+                                                        </li>
+                                                        <li>
+                                                            Slack
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="tab-pane" id="banco-dados">
+                                <article class="mb-4 ms-lg-5">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img class="w-100" src="https://static.vecteezy.com/ti/vetor-gratis/p1/11208381-banco-de-dados-de-tecnologia-de-armazenamento-vetor.jpg" alt="">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>
+                                                O banco de dados é a organização e armazenagem de informações sobre um domínio específico. 
+                                                De forma mais simples, é o agrupamento de dados que tratam do mesmo assunto, e que precisam ser 
+                                                armazenados para segurança ou conferência futura. 
+                                            </p>
+                                            <p>
+                                                É comum que empresas tenham diversas informações que precisam ser organizadas e disponibilizadas 
+                                                dentro do negócio para que sejam consultadas posteriormente pela equipe e pela gerência.
+                                                Por isso, é interessante ter um sistema de gerenciamento de banco de dados, SGBD, para conseguir 
+                                                manipular as informações e tornar a rotina da empresa muito mais simples.
+                                            </p>
+                                            <p>
+                                                Se você está se perguntando porque o WordPress precisa de um banco de dados, a resposta é simples:
+                                                para permitir armazenar todas as informações contidas no seu site e blog em WordPress de forma eficiente, 
+                                                permitindo que o usuário tenha a melhor experiência possível e consiga realmente navegar e encontrar todas
+                                                as informações que precisa durante a sua busca.
+                                            </p>
+                                            <p>
+                                                Esses dados corretamente organizados irão ajudar a melhorar não só a experiência desses visitantes, 
+                                                como também a rotina da sua área de TI. Afinal, seus profissionais conseguirão acessar, armazenar e 
+                                                restaurar os dados sempre que necessário com o uso de uma boa ferramenta de gestão de banco de dados.
+                                            </p>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <h4 class="text-colored-1" id="sgbd">Os principais SGBDs</h4>
+                                                    <ul id="lista-sgbd">
+                                                        <li>
+                                                            MySQL
+                                                        </li>
+                                                        <li>
+                                                            SQL Server
+                                                        </li>
+                                                        <li>
+                                                            PostgreSQL
+                                                        </li>
+                                                        <li>
+                                                            Oracle
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contato">
+            <div class="container">
+                <h2 class="mb-5 text-colored-1">Contato</h2>
+                <div class="row">
+                    <div class="col-lg-6 ms-lg-5">
+                        <form>
+                            <div>
+                                <label class="form-label fw-bold text-colored-2" for="nome">Seu nome</label>
+                                <input type="text" class="form-control" placeholder="Seu nome" name="nome"/>
+                                <p id="mensagem-erro"></p>
+                            </div>
+                            <div class="mt-2">
+                                <label class="form-label fw-bold text-colored-2" for="email">E-mail</label>
+                                <input type="email" class="form-control" placeholder="E-mail" name="email"/>
+                                <p class="mensagem-erro"></p>
+                            </div>
+                            <div class="mt-2">
+                                <label class="form-label fw-bold text-colored-2" for="telefone">Telefone</label>
+                                <input type="tel" id="telefone" class="form-control" name="telefone"/>
+                                <p class="mensagem-erro"></p>
+                            </div>
+                            <div class="mt-2">
+                                <label class="form-label fw-bold text-colored-2" for="mensagem">Mensagem</label>
+                                <textarea placeholder="Sua mensagem" class="form-control" name="mensagem"></textarea>
+                                <p class="mensagem-erro"></p>
+                            </div>
+                            <button type="submit" class="btn text-colored-1 fw-bold mt-3 mb-5">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-lg-4 ms-lg-4">
+                        <h3 class="fs-5 fw-bold text-colored-2">Siga-me em minhas redes sociais</h3>
+                        <ul class="social-list d-flex p-0">
+                            <li class="me-2">
+                                <a href="https://instagram.com/staviaszesc?igshid=ZDdkNTZiNTM=" target="_blank"><i class="bi bi-instagram text-colored-2"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/staviasz" target="_blank"><i class="bi bi-github text-colored-2"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </section>
+    </div>
+    <footer>
+        <div class="container">
+            <p class="text-center p-2 mt-5 mb-0">
+                &copy; Erick staviasz - Todos os direitos reservados - 2023
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="scripts/jquery.mask.min.js"></script>
+    <script src="scripts/jquery.validate.min.js"></script>
+    <script src="scripts/messages_pt_BR.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#telefone').mask('(00) 00000-0000', {
+                placeholder:'(00) 00000-0000'
+            })
+
+            let menssage = document.getElementById('mensagem-erro')
+            $('form').validate({
+                rules: {
+                    nome:{
+                        required: true
+                    },
+                    email:{
+                        required: true
+                    },
+                    telefone:{
+                        required: true
+                    },
+                    mensagem:{
+                        required: true
+                    }
+                },
+            });
+
+            $('#javascript-vantagens').click(function () {
+                $('#vantagens-script').slideToggle()
+            });
+
+            $('#javascript-desvantagens').click(function () {
+                $('#desvantagens-script').slideToggle()
+            });
+
+            $('#vantagens-python').click(function () {
+                $('#lista-vantagens-python').slideToggle()
+            });
+
+            $('#empresas-python').click(function () {
+                $('#lista-empresas-python').slideToggle()
+            });
+
+            $('#vantagens-java').click(function () {
+                $('#lista-vantagens-java').slideToggle()
+            });
+
+            $('#empresas-java').click(function () {
+                $('#lista-empresas-java').slideToggle()
+            });
+
+            $('#vantagens-php').click(function () {
+                $('#lista-vantagens-php').slideToggle()
+            });
+
+            $('#empresas-php').click(function () {
+                $('#lista-empresas-php').slideToggle()
+            });
+
+            $('#sgbd').click(function () {
+                $('#lista-sgbd').slideToggle()
+            });
+        });
+    </script>
+</body>
+</html>

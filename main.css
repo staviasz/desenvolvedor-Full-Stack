@@ -1,0 +1,130 @@
+body {
+    text-align: justify;
+    font-family: Roboto;
+}
+
+header,
+form .btn:hover,
+footer {
+    background-color: #044f9b;
+}
+
+.navbar-brand a,
+.nav-link {
+    font-style: italic;
+
+}
+
+.nav-link:hover,
+.nav .nav-link.active,
+.text-colored-2,
+form .btn:hover {
+    color: #bf551b;
+}
+
+.nav .nav-link.active,
+.navbar-toggler {
+    background-color: #fff;
+}
+.navbar-brand a {
+    text-decoration: none;
+}
+
+.carousel-item img {
+    height: 600px;
+}
+
+.back-color {
+    background-color: #0011ff0e;
+}
+
+h2 {
+    font-size: 29px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: larger;
+    font-weight: 800;
+}
+
+#sobre-mim p {
+    margin: 8px 0;
+    text-indent:0;
+}
+
+#sobre-mim img {
+    height: 300px;
+}
+
+section .nav-pills:hover {
+    color: #bf551b;
+}
+
+section .nav-pills .active {
+    background-color: #bf551b;
+    color: #044f9b;
+}
+
+section ul {
+    display: none;
+}
+
+#javascript-vantagens:hover,
+#javascript-desvantagens:hover,
+#vantagens-python:hover,
+#empresas-python:hover,
+#vantagens-java:hover,
+#empresas-java:hover,
+#vantagens-php:hover,
+#empresas-php:hover,
+#sgbd:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+article p {
+    margin-top: 16px;
+    text-indent: 30px;
+}
+
+form textarea {
+    resize: none;
+    height: 150px;
+}
+
+form .btn {
+    background-color: #bf551b;
+}
+
+#contato li {
+    list-style: none;
+}
+
+.bi {
+    font-size: 24px;
+}
+
+footer {
+    color: #fff;
+}
+
+.text-colored-1 {
+    color: #03407e;
+}
+
+@media screen and (max-width: 960px) {
+    #carousel img {
+        height: 300px;
+    }
+
+    #sobre-mim img {
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #carousel img {
+        height: 250px;
+    }
+}
